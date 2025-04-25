@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>Book Hub</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .tooltip-btn {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .tooltip-text {
+            visibility: hidden;
+            width: 160px;
+            background: rgba(0,0,0,0.85);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 12px;
+            position: absolute;
+            z-index: 1000;
+            bottom: 125%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            line-height: 1.4;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -6px;
+            border-width: 6px;
+            border-style: solid;
+            border-color: rgba(0,0,0,0.85) transparent transparent transparent;
+        }
+        
+        .tooltip-btn:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+            transform: translateX(-50%) translateY(-5px);
+        }
+        </style>
+
+</head>
+
+<body>
+
+    <!-- Start Main Top -->
+    <div class="main-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="text-slid-box">
+                        <div id="offer-box" class="carouselTicker">
+                            <ul class="offer-box">
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 10%! On first Order
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> 20% off Use Promo code: offT20
+                                </li>
+                                <li>
+                                    <i class="fab fa-opencart"></i> Off 30% off Refer a friend
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="custom-select-box">
+
+					</select>
+                    </div>
+                    <div class="right-phone-box">
+                        <p>联系我们 :- <a href="#"> +60-1163715677</a></p>
+                    </div>
+                    <div class="our-link">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" width="120" height="70" class="logo" alt=""></a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">主页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://form.jotform.com/251092910781456">联系我们</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <li class="cart-box">
+                    <ul class="cart-list">
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                        <li class="total">
+
+                        </li>
+                    </ul>
+                </li>
+            </div>
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start Slider -->
+    <div id="slides-shop" class="cover-slides">
+        <ul class="slides-container">
+            <li class="text-left">
+                <img src="https://ave.s3.ap-east-1.amazonaws.com/logo/tg-share.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong><br></strong></h1>
+                            <p class="m-b-40"></p>
+                            <p><a class="btn hvr-hover" href="https://www.ave.ai">跳转Ave</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-center">
+                <img src="https://wallpapers.com/images/featured/binance-background-b03h7uw1fdbvm4in.jpg" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong><br></strong></h1>
+                            <p class="m-b-40"></p>
+                            <p><a class="btn hvr-hover" href="https://www.biance.com">跳转比安</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="text-right">
+                <img src="https://cdn.prod.website-files.com/67ed326db9d26b1dc1df7929/68017fcb607b9f68d91d5089_66d9c4723dd5f90485d2da51_OKX%2520Review.webp" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="m-b-20"><strong><br></strong></h1>
+                            <p class="m-b-40"></p>
+                            <p><a class="btn hvr-hover" href="https://www.okx.com">跳转okx</a></p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slides-navigation">
+            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- End Slider -->
+
+    <!-- Start Categories  -->
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="shop-cat-box">
+                <img class="img-fluid" src="https://logodownload.org/wp-content/uploads/2021/03/binance-logo-0.png" width="352px" length="352px" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="#">
+                    币安
+                    <span class="tooltip-text">全球领先的加密货币交易所<br>支持多种数字资产交易</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="data:image/png;base64,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" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="#">
+                    bybit
+                    <span class="tooltip-text">专业数字货币衍生品交易平台<br>提供杠杆和合约交易</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="https://www.redotpay.com/img/secure-custodian/card-rotate.png" alt="https://www.redotpay.com/img/secure-custodian/card-rotate.png" />
+                <a class="btn hvr-hover tooltip-btn" href="https://url.hk/i/zh/76cp1">
+                    币安
+                    <span class="tooltip-text">区块链支付解决方案提供商<br>支持跨境快速转账</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="shop-cat-box">
+                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY_qbFLdIy4FAGwKa4YQF-hidpi6cb1PD5Xg&s" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="https://www.gateio24.com/signup/VLFDUQ9EVQ?ref_type=103">
+                    gate.io
+                    <span class="tooltip-text">全球化数字资产交易平台<br>支持2000+币种交易</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="https://altcoinsbox.com/wp-content/uploads/2023/04/full-bitget-logo.png" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="#">
+                    bitget
+                    <span class="tooltip-text">一站式数字资产交易平台<br>首创跟单交易系统</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="" width="352px" length="352px" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="https://cloud.siliconflow.cn/i/6fgAuHXE">
+                    硅基流动
+                    <span class="tooltip-text">AI云服务平台<br>提供深度学习算力支持</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="shop-cat-box">
+                <img class="img-fluid" src="images\image copy.png" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="#">
+                    okx
+                    <span class="tooltip-text">专业数字资产交易平台<br>提供法币交易通道</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="data:image/jpeg;base64,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" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="https://share.ave.ai">
+                    AVE.AI
+                    <span class="tooltip-text">智能投顾服务平台<br>AI量化交易解决方案</span>
+                </a>
+            </div>
+            <div class="shop-cat-box-small">
+                <img class="img-fluid" src="images\PixPin_2025-04-17_18-35-42.png" width="352px" length="352px" alt="" />
+                <a class="btn hvr-hover tooltip-btn" href="#">
+                    币安
+                    <span class="tooltip-text">数字资产安全存储方案<br>多重签名冷钱包系统</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Categories -->
+
+    <!-- Start Products  -->
+    <div class="products-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>排名</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="special-menu text-center">
+                        <div class="button-group filter-button-group">
+                            <button class="active" data-filter="*">全部</button>
+                            <button data-filter=".top-featured">最快</button>
+                            <button data-filter=".best-seller">手续费最低</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row special-list">
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="images/Zero-To-One-by-Peter-Thiel-400x600.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="#">前往</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>比安</h4>
+                            <h5> 中国最大交易平台</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="new">New</p>
+                            </div>
+                            <img src="images/Alchemist.png" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Alchemist</h4>
+                            <h5> ₹160</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid top-featured">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="images/The_Intelligent_invester.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4></h4>
+                            <h5> </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 special-grid best-seller">
+                    <div class="products-single fix">
+                        <div class="box-img-hover">
+                            <div class="type-lb">
+                                <p class="sale">Sale</p>
+                            </div>
+                            <img src="images/sherlock.jpg" class="img-fluid" alt="Image">
+                            <div class="mask-icon">
+                                <a class="cart" href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="why-text">
+                            <h4>Sherlock Homes</h4>
+                            <h5> ₹299</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- End Products  -->
+
+    <!-- Start Blog  -->
+    <div class="latest-blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-all text-center">
+                        <h1>Latest blog</h1>
+                        <p><strong>“A room without books is like a body without a soul.” – Cicero</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/bo.webp" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>A Promised Land by Barack Obama</h3>
+                                <p>
+                                    A Promised Land’ is the first of two volumes of Barack Obama’s memoirs of his two-term presidency. Published in November last year, this part covers his path to becoming the Democrat candidate in 2008 and then rattles through the main challenges he faced
+                                    during the first two-and-a-half years of his presidency including the financial crisis, military operations in Afghanistan and Iraq, healthcare reform, climate change, the Deepwater Horizon oil spill, the Arab Spring
+                                    and the raid that killed Osama bin Laden
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/three.jpeg" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Three Books By Indie Publishers</h3>
+                                <p>
+                                    The last ten months or so have been very tough for the publishing industry in general, and particularly challenging for small indie presses who have still succeeded in bringing brilliant new books in to the world during a pandemic no less. One of those
+                                    is Exit Management by Naomi Booth which was published by Dead Ink Books last summer. Originally from the north of England, Lauren works at a City firm as a graduate HR executive and specialises in “exit management”,
+                                    otherwise known as firing people in less corporate terms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img class="img-fluid" src="images/ro.webp" alt="" />
+                        </div>
+                        <div class="blog-content">
+                            <div class="title-blog">
+                                <h3>Rodham by Curtis Sittenfeld</h3>
+                                <p>
+                                    I really enjoyed American Wife by Curtis Sittenfeld which is a thinly disguised account of the life of Laura Bush, wife of George W. Bush and former First Lady of the United States. I also enjoyed Sittenfeld’s short story ‘The Nominee’ which is included
+                                    in the UK edition of You Think It, I’ll Say It and is told from the perspective of Hillary Rodham Clinton a few months before the 2016 US presidential election.
+                                </p>
+
+                            </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Blog  -->
+
+
+    <!-- Start Instagram Feed  -->
+    <div class="instagram-box">
+        <div class="main-instagram owl-carousel owl-theme">
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-01.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-02.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-03.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-04.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-06.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-07.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-08.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-09.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="ins-inner-box">
+                    <img src="images/instagram-img-05.jpg" alt="" />
+                    <div class="hov-in">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+    <footer>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-widget">
+                            <h4>About Book Hub</h4>
+                            <p>When it comes to searching for books, there is only one place to turn to – Book Hub.We have a veritable collection of books that span categories as diverse as you could possibly expect. From segments like accountancy, to parenting
+                                and pregnancy, to banking and finance, to even topics on yoga and meditation – almost any category you seek – you will find with us
+                            </p>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="https://www.indiabookstore.net/">Details</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        <div class="footer-link-contact">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li>
+                                    <p><i class="fas fa-map-marker-alt"></i>Address: Mussoorie, Diversion Road<br>Makka Wala, Uttarakhand <br> Pin 248008 </p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-phone-square"></i>Phone: <a href="tel:+1-888705770">+91-7891766450</a></p>
+                                </li>
+                                <li>
+                                    <p><i class="fas fa-envelope"></i>Email: <a href="mailto:contactinfo@gmail.com">bookhub2020@gmail.com</a></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2021 <a href="#">BOOK HUB</a> Design By :
+            <a href="https://html.design/">Support Team</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/inewsticker.js"></script>
+    <script src="js/bootsnav.js."></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+    <style>
+        /* 排序箭头样式 */
+        .sort-arrows {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 100;
+        }
+        
+        .arrow-btn {
+            background: rgba(255,255,255,0.8);
+            border: none;
+            padding: 5px;
+            margin: 2px;
+            border-radius: 3px;
+            transition: transform 0.3s ease;
+        }
+        
+        .arrow-btn:hover {
+            transform: scale(1.2);
+        }
+        
+        /* 排序动画 */
+        .special-grid {
+            transition: all 0.3s ease;
+        }
+    </style>
+    
+    <script>
+        // 排序功能
+        function moveItem(btn, direction) {
+            const item = btn.closest('.special-grid');
+            const container = item.parentNode;
+            
+            if(direction === 'up' && item.previousElementSibling) {
+                container.insertBefore(item, item.previousElementSibling);
+            } else if(direction === 'down' && item.nextElementSibling) {
+                container.insertBefore(item.nextElementSibling, item);
+            }
+        }
+    </script>
+</body>
+
+</html>
