@@ -32,6 +32,89 @@
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
+语言
+
+/* —— 全局重置 & 基础 —— */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* —— 布局 —— */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav {
+  position: relative;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-list li + li {
+  margin-left: 20px;
+}
+.nav-list a {
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 主体 & 页脚 */
+.main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #f8f8f8;
+  font-size: 0.9rem;
+}
+
+/* —— 响应式 —— */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .nav-list li + li {
+    margin: 10px 0;
+  }
+}
+
+-------------------------------------------------------------------
  body {
      color: #666666;
      font-size: 15px;
