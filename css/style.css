@@ -757,7 +757,7 @@
      padding: 70px 0px;
 }
  .shop-cat-box{
-     height:  450px;
+     height:  550px;
      margin-bottom: 30px;
      position: relative;
      padding: 3px;
@@ -767,7 +767,7 @@
      transition: background 0.4s 0.5s;
 }
 .shop-cat-box-small{
-    height: 210px;
+    height: 280px;
     margin-bottom: 30px;
     position: relative;
     padding: 3px;
