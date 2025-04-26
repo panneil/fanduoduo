@@ -961,6 +961,9 @@
      background: #010101;
      color: #ffffff;
 }
+
+.col-lg-3 col-md-6 special-grid top-featured{
+    background: 
  .products-single .mask-icon{
      background: rgba(1,1,1, 0.5);
      top: -100%;
