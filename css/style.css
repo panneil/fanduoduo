@@ -1010,6 +1010,7 @@ body {
      overflow: hidden;
      position: relative;
      height: 300px;
+     background: #000000;
 }
  .box-img-hover img{
      margin: 0 auto;
