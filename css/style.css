@@ -1012,6 +1012,11 @@ body {
      height: 300px;
      background: #000000;
 }
+ .products-single-b .box-img-hover{
+     overflow: hidden;
+     position: relative;
+     height: 300px;
+ }
  .box-img-hover img{
      margin: 0 auto;
      text-align: center;
